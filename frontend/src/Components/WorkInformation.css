@@ -1,0 +1,60 @@
+/* src/Components/HrSettings.css */
+.hr-settings {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns: one for labels and one for inputs */
+  gap: 20px; /* Space between columns */
+  padding: 20px;
+  max-width: 1200px; /* Constrain the overall width for better readability */
+  margin: 0 auto; /* Center the container */
+}
+
+.left-side, .right-side {
+  display: grid;
+  gap: 20px; /* Space between sections */
+}
+
+.left-side > div, .right-side > div {
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333; /* Darker color for better readability */
+  border-bottom: 2px solid #ddd; /* Light gray underline */
+  padding-bottom: 5px; /* Space between text and underline */
+}
+
+label {
+  display: contents; /* Allows labels and inputs to align in grid columns */
+  margin-bottom: 15px; /* Space below each label-input pair */
+}
+
+label span {
+  font-weight: bold; /* Emphasize labels */
+  color: #555; /* Slightly darker color for labels */
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+@media (max-width: 768px) {
+  .hr-settings {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  label {
+    display: block; /* Stack labels and inputs vertically on small screens */
+  }
+
+  input[type="text"] {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
