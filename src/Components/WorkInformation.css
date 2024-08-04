@@ -1,0 +1,35 @@
+/* src/Components/HrSettings.css */
+.hr-settings {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-side, .right-side {
+  flex: 1;
+}
+
+.left-side > div, .right-side > div {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  padding: 8px;
+  width: calc(100% - 20px); /* Adjust width to fit label padding */
+  max-width: 600px; /* Ensure inputs are not too wide */
+  border: 1px solid #ccc; /* Light border color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
