@@ -31,7 +31,7 @@ const Home = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/home', {
+      const response = await axios.post('http://localhost:5003/api/home', {
         ...formData,
         resumeEntries,
         skillsEntries
